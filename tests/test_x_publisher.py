@@ -14,6 +14,10 @@ def record(monkeypatch):
     monkeypatch.delenv('OPENAI_API_KEY', raising=False)
     result = Pipeline().run(load_case('PS-2019-MN-001')).model_dump(mode='json')
     result['_publisher_source'] = 'research_worker'
+    for name in ('analysis', 'meta_review'):
+        result['verdicts'][name].update(abstained=False, abstain_reason=None, flags=[])
+    result['verdicts']['analysis']['data']['synthesis'] = 'Evidence gaps prevent validation of the model estimates.'
+    result['verdicts']['meta_review']['data']['review'] = {'summary': 'Independent validation is needed.', 'methodology_findings': ['Probability caps can mask evidence sensitivity.']}
     return result
 
 
@@ -135,3 +139,29 @@ def test_publicly_submitted_records_are_not_published(tmp_path, record, settings
     agent = publisher(tmp_path, record, lambda request: pytest.fail('Unexpected request'))
     agent.tick()
     assert agent.snapshot()['status'] == 'waiting_for_research'
+
+
+@pytest.mark.parametrize('name', ['analysis', 'meta_review'])
+def test_failed_llm_runs_never_publish(tmp_path, record, settings, name):
+    record['verdicts'][name].update(abstained=True, abstain_reason='OpenAI API HTTP 429')
+    agent = publisher(tmp_path, record, lambda request: pytest.fail('Unexpected request'))
+    agent.tick()
+    assert agent.snapshot()['status'] == 'waiting_for_research'
+    assert agent.snapshot()['history'] == []
+
+
+def test_summaries_show_findings_and_qualify_scores(record):
+    text = '\n'.join(compose_thread(record, 'https://plagueshield.example'))
+    assert 'not accuracy' in text
+    assert 'Clinical summary prepared' not in text
+    assert 'Probability caps' in text
+
+
+def test_latest_failure_does_not_publish_stale_success(tmp_path, record, settings):
+    import copy
+    failed = copy.deepcopy(record)
+    failed['assessed_at'] = '9999-01-01'
+    failed['verdicts']['analysis']['abstained'] = True
+    agent = XPublisher(lambda: [record, failed], tmp_path / 'outbox.db', client_factory=lambda: pytest.fail('Unexpected request'))
+    agent.tick()
+    assert agent.snapshot()['history'] == []

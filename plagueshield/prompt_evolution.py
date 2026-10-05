@@ -93,9 +93,9 @@ def review_history(records: list[dict]) -> dict:
     for record in trusted[-8:]:
         recent.append({"case_id": record.get("case_id"), "assessed_at": record.get("assessed_at"),
                        "verdicts": {name: {"headline": v.get("headline"), "abstained": v.get("abstained"),
-                                           "rationale": [str(s)[:2500] for s in v.get("rationale", [])[:3]],
+                                           "rationale": [str(s)[:600] for s in v.get("rationale", [])[:2]],
                                            "prompt_version": v.get("data", {}).get("prompt_revision", {}).get("version")}
                                     for name, v in record.get("verdicts", {}).items()}})
     return {"total_iterations": len(trusted), "unique_cases": len({r.get("case_id") for r in trusted}),
             "agent_totals": counts, "recent_iterations": recent,
-            "scope": "Counts cover all stored worker iterations. Detailed evidence covers the latest eight; this is not a full-text review of all historical outputs."}
+            "scope": "Counts cover all stored worker iterations. Evidence excerpts cover the latest eight, with at most two 600-character rationale excerpts per agent; this is not a full-text review of all historical outputs."}

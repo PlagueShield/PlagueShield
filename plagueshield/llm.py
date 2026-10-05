@@ -103,6 +103,14 @@ def request_with_openai(payload: dict[str, Any], timeout: float = 90.0) -> str:
     except httpx.RequestError as exc:
         raise LLMUnavailable("OpenAI API request failed") from exc
     if response.status_code >= 400:
+        if response.status_code == 429:
+            try:
+                error = response.json().get('error') or {}
+            except ValueError:
+                error = {}
+            if error.get('code') in {'credit_balance_exhausted', 'insufficient_quota'} or error.get('type') == 'insufficient_quota':
+                raise LLMUnavailable('OpenAI API credits or spending quota exhausted; check API billing')
+            raise LLMUnavailable('OpenAI API rate limit reached; retry on a subsequent iteration')
         raise LLMUnavailable(f"OpenAI API HTTP {response.status_code}")
     try:
         body = response.json()

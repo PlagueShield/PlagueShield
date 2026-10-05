@@ -49,9 +49,21 @@ def compose_thread(record: dict, public_url: str) -> list[str]:
     lines = []
     for name in names:
         verdict = verdicts.get(name, {})
-        finding = verdict.get('abstain_reason') if verdict.get('abstained') else (
-            (verdict.get('data') or {}).get('synthesis') or verdict.get('headline')
-        )
+        data = verdict.get('data') or {}
+        finding = verdict.get('abstain_reason') if verdict.get('abstained') else data.get('synthesis') or verdict.get('headline')
+        if not verdict.get('abstained'):
+            if name == 'uncertainty':
+                score = data.get('reliability')
+                finding = f'Uncalibrated heuristic score: {score:.0%}; not accuracy' if isinstance(score, (int, float)) else 'Heuristic confidence; not measured accuracy'
+            elif name == 'meta_review':
+                review = data.get('review') or {}
+                finding = next(iter(review.get('methodology_findings') or []), None) or review.get('summary') or finding
+            elif name == 'summary':
+                finding = next(iter(verdict.get('rationale') or []), finding)
+            elif name == 'analysis':
+                finding = next((line.strip() for line in str(finding).splitlines() if line.strip() and not line.lstrip().startswith('#')), finding)
+            elif name == 'diagnostic':
+                finding = 'Model estimate: ' + str(finding)
         prefix = name.replace('_', '-') + (': ABSTAINED ' if verdict.get('abstained') else ': ')
         lines.append(prefix + ascii_excerpt(finding or 'No published finding.', 82 - len(prefix)))
     posts = [root, *['\n'.join(lines[index:index + 3]) for index in range(0, len(lines), 3)]]
@@ -143,6 +155,14 @@ class XPublisher:
                 load_case(record['case_id'])
             except (FileNotFoundError, KeyError):
                 continue
+            verdicts = record.get('verdicts') or {}
+            # Do not fall back to stale successful runs when the latest run failed.
+            if any(v.get('abstained', True) for name in ('analysis', 'meta_review') for v in [verdicts.get(name, {})]):
+                return None
+            if not verdicts['analysis'].get('data', {}).get('synthesis') or not verdicts['meta_review'].get('data', {}).get('review', {}).get('summary'):
+                return None
+            if any(flag.get('code') == 'AGENT_FAILURE' for verdict in verdicts.values() for flag in verdict.get('flags', [])):
+                return None
             return record
         return None
 

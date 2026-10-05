@@ -57,3 +57,17 @@ def test_failed_or_empty_responses_are_unavailable(monkeypatch, status, body):
     ))
     with pytest.raises(llm.LLMUnavailable):
         llm.analyze_with_openai(case_payload={}, verdicts={})
+
+
+def test_quota_exhaustion_is_distinguished_without_retry_or_raw_error(monkeypatch):
+    monkeypatch.setenv('OPENAI_API_KEY', 'test-key')
+    client_class = httpx.Client
+    calls = []
+    def respond(request):
+        calls.append(request)
+        return httpx.Response(429, json={'error': {'code': 'credit_balance_exhausted', 'type': 'insufficient_quota', 'message': 'private-provider-message'}})
+    monkeypatch.setattr(llm.httpx, 'Client', lambda **kwargs: client_class(transport=httpx.MockTransport(respond), **kwargs))
+    with pytest.raises(llm.LLMUnavailable, match='credits or spending quota exhausted') as error:
+        llm.analyze_with_openai(case_payload={}, verdicts={})
+    assert len(calls) == 1
+    assert 'private-provider-message' not in str(error.value)
