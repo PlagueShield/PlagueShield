@@ -10,6 +10,7 @@ kill_timeout = "240s"
   PLAGUESHIELD_DATA_DIR = "/data"
   PLAGUESHIELD_PUBLIC_READ_ONLY = "true"
   PLAGUESHIELD_PUBLIC_URL = "https://plagueshield.com"
+  PLAGUESHIELD_TOKEN_ADDRESS = "3MQx1XzqEJraumXgcJM2A67jx6Lk8wrEaiU51bdXpump" # gitleaks:allow public token address
   PLAGUESHIELD_LLM_MODEL = "gpt-5.5"
   PLAGUESHIELD_WORKER_ENABLED = "true"
   PLAGUESHIELD_RUN_INTERVAL_SECONDS = "120"
