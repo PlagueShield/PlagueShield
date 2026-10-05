@@ -54,6 +54,10 @@ class ResearchWorker:
         result["alive"] = bool(self._thread and self._thread.is_alive())
         return result
 
+    def revision(self) -> int:
+        with self._lock:
+            return self._state['revision']
+
     def start(self) -> None:
         if self._thread and self._thread.is_alive():
             return

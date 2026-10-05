@@ -73,6 +73,8 @@ app = FastAPI(
 )
 
 _lock = threading.Lock()
+_records_cache: list[dict[str, Any]] = []
+_records_signature: tuple | None = None
 from plagueshield.prompt_evolution import PromptStore, review_history
 
 _prompts = PromptStore(STORE_PATH.parent / "prompt_revisions.sqlite3")
@@ -88,9 +90,11 @@ _pipeline = Pipeline(
 
 
 def _append(record: dict[str, Any]) -> None:
+    global _records_signature
     with _lock:
         with STORE_PATH.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(record, separators=(",", ":")) + "\n")
+        _records_signature = None
 
 
 def _publish_background(assessment: CaseAssessment) -> None:
@@ -115,19 +119,25 @@ _worker = ResearchWorker(
 
 
 def _read_all() -> list[dict[str, Any]]:
-    if not STORE_PATH.exists():
-        return []
-    out: list[dict[str, Any]] = []
+    global _records_cache, _records_signature
     with _lock:
-        for line in STORE_PATH.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                out.append(json.loads(line))
-            except json.JSONDecodeError:
-                continue
-    return out
+        try:
+            stat = STORE_PATH.stat()
+        except FileNotFoundError:
+            _records_cache, _records_signature = [], None
+            return []
+        signature = (str(STORE_PATH), stat.st_ino, stat.st_size, stat.st_mtime_ns)
+        if signature == _records_signature:
+            return list(_records_cache)
+        out: list[dict[str, Any]] = []
+        with STORE_PATH.open(encoding="utf-8") as records:
+            for line in records:
+                try:
+                    out.append(json.loads(line))
+                except json.JSONDecodeError:
+                    continue
+        _records_cache, _records_signature = out, signature
+        return list(_records_cache)
 
 
 def _latest_per_case(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -602,8 +612,8 @@ async def live_stream(request: Request) -> StreamingResponse:
         revision = -1
         heartbeat = asyncio.get_running_loop().time()
         while not await request.is_disconnected():
-            snapshot = _worker.snapshot()
-            if snapshot["revision"] != revision:
+            if _worker.revision() != revision:
+                snapshot = _worker.snapshot()
                 revision = snapshot["revision"]
                 yield f"event: progress\ndata: {json.dumps(snapshot)}\n\n"
                 heartbeat = asyncio.get_running_loop().time()
@@ -618,7 +628,7 @@ async def live_stream(request: Request) -> StreamingResponse:
 
 
 @app.get("/healthz")
-def healthz() -> dict[str, str]:
+async def healthz() -> dict[str, str]:
     return {"status": "ok"}
 
 
