@@ -1,0 +1,17 @@
+.env
+.env.*
+.venv
+.git
+__pycache__
+**/__pycache__
+*.pyc
+**/*.pyc
+.pytest_cache
+*.egg-info
+**/*.egg-info
+tests
+server/*.sqlite3*
+server/assessments.ndjson
+server/runtime.log
+*.zip
+*.tar*

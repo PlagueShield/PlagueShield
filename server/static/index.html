@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlagueShield</title>
+<link rel="stylesheet" href="/static/styles.css">
+<meta name="theme-color" content="#090909">
+<link rel="icon" type="image/png" href="/static/plagueshield-logo-transparent.png">
+</head>
+<body>
+<header class="topbar">
+  <a class="sig" href="/">
+    <img class="sig-mark" src="/static/plagueshield-logo-transparent.png" width="42" height="42" alt="">
+    <span>PlagueShield</span>
+  </a>
+  <nav class="tabs" id="top-tabs">
+    <a href="/" data-route="/">0:live</a>
+    <a href="/agents" data-route="/agents">1:agents</a>
+    <a href="/results" data-route="/results">2:results</a>
+    <a href="/cases" data-route="/cases">3:cases</a>
+    <a href="/data" data-route="/data">4:data</a>
+    <a href="/docs" data-route="/docs">5:docs</a>
+  </nav>
+  <div class="token-mini">
+    <span data-token-market-cap hidden>mcap</span><strong id="mini-mcap" data-token-market-cap hidden></strong>
+    <span data-token-address hidden>ca</span><button id="copy-token" class="text-btn" data-token-address hidden></button>
+    <a href="https://x.com/plagueshieldX" target="_blank" rel="noopener">x ↗</a>
+    <a href="https://github.com/PlagueShield/PlagueShield" target="_blank" rel="noopener">github ↗</a>
+  </div>
+</header>
+
+<main id="app">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="prompt">~/plagueshield › agent status --public</p>
+      <h1 aria-label="PlagueShield"><span class="ascii-wordmark" aria-hidden="true" id="ascii-wordmark"></span></h1>
+      <p class="lede">
+        Autonomous agents researching plague evidence,<br>
+        resistance uncertainty, and the next useful result.
+      </p>
+      <pre class="research-status" id="research-status">[ agents ]  awaiting published status
+[ model  ]  GPT-5.5
+[ compute]  funded by token fees</pre>
+      <div class="token-card token-unconfigured" id="token-details">
+        <div data-token-address hidden>
+          <span class="label">token address</span>
+          <strong id="token-address"></strong>
+        </div>
+        <div data-token-market-cap hidden>
+          <span class="label">market cap</span>
+          <strong id="token-market-cap"></strong>
+        </div>
+        <div>
+          <span class="label">compute funding</span>
+          <strong>Token fees fund compute for this research.</strong>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a class="action" href="https://x.com/plagueshieldX" target="_blank" rel="noopener">@plagueshieldX ↗</a>
+        <a class="action" href="https://github.com/PlagueShield/PlagueShield" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="action muted" href="/agents/analysis">GPT-5.5 analysis agent</a>
+      </div>
+    </div>
+    <section class="stage">
+      <div class="stage-head">
+        <span class="hot"></span>
+        <span>agent loop --live</span>
+        <em id="loop-meta">syncing</em>
+      </div>
+      <div class="loop-wrap">
+        <canvas id="agent-loop" width="860" height="520" aria-label="Live progress of backend research agents"></canvas>
+        <div class="loop-steps" id="loop-steps" aria-label="Agent progress steps"></div>
+        <div class="loop-tooltip" id="loop-tooltip" role="tooltip" hidden></div>
+        <div class="loop-center">
+          <img src="/static/plagueshield-logo-transparent.png" width="48" height="48" alt="">
+          <strong id="loop-case">waiting</strong>
+          <span id="loop-agent">connecting to backend</span>
+        </div>
+      </div>
+      <div class="loop-foot"><span id="loop-run-status">connecting</span><span id="loop-progress">0/10 steps</span></div>
+      <progress class="run-progress" id="run-progress" max="10" value="0" aria-label="Completed agent steps"></progress>
+    </section>
+  </section>
+
+  <section class="strip" id="stats-strip">
+    <div><span>cases</span><strong id="s-cases">-</strong></div>
+    <div><span>assessed</span><strong id="s-assessed">-</strong></div>
+    <div><span>review</span><strong id="s-review">-</strong></div>
+    <div><span>abstain</span><strong id="s-abstain">-</strong></div>
+    <div><span>llm</span><strong id="s-llm">GPT-5.5</strong></div>
+  </section>
+
+  <section class="page" id="page-home">
+    <div class="section-head">
+      <span>0:live</span>
+      <h2>Current Work</h2>
+      <small id="activity-meta">loading</small>
+    </div>
+    <div class="split">
+      <div class="terminal" id="activity-log"></div>
+      <div class="agent-roster">
+        <div class="roster-head"><span>STAGE</span><span>AGENT</span><span>LATEST STATUS</span></div>
+        <div class="agent-list" id="agent-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-agents" hidden>
+    <div class="section-head"><span>1:agents</span><h2>Research Agents</h2><small>pipeline roles and dependencies</small></div>
+    <div id="agents-directory"></div>
+  </section>
+
+  <section class="page" id="page-agent" hidden>
+    <div class="section-head">
+      <span id="agent-num">1:agent</span>
+      <h2 id="agent-title">Agent</h2>
+      <small id="agent-meta"></small>
+    </div>
+    <nav class="agent-nav" id="agent-nav" aria-label="Research agents"></nav>
+    <div class="agent-page">
+      <div class="agent-detail" id="agent-detail"></div>
+      <div class="terminal" id="agent-activity"></div>
+    </div>
+  </section>
+
+  <section class="page" id="page-cases" hidden>
+    <div class="section-head">
+      <span>3:cases</span>
+      <h2>Public Case Status</h2>
+      <small id="cases-meta">read-only</small>
+    </div>
+    <div class="case-grid" id="cases-grid"></div>
+  </section>
+
+  <section class="page" id="page-data" hidden>
+    <div class="section-head">
+      <span>4:data</span>
+      <h2>Research Inputs</h2>
+      <small>public snapshots and guidance context</small>
+    </div>
+    <div class="case-grid" id="data-grid"></div>
+  </section>
+
+  <section class="page" id="page-docs" hidden>
+    <div class="section-head"><span>5:docs</span><h2>API Reference</h2><small><a href="/openapi.json">OpenAPI JSON ↗</a></small></div>
+    <div class="docs-intro">
+      <h3>Public Research Data</h3>
+      <p>Case records, published assessments, agent results, and source snapshots.</p>
+      <pre class="code-block">GET /api/assessments
+Accept: application/json</pre>
+    </div>
+    <div id="docs-endpoints"></div>
+  </section>
+  <section class="page" id="page-results" hidden>
+    <div class="section-head"><span>2:results</span><h2>Research Results</h2><small id="results-count"></small></div>
+    <div class="results-tools">
+      <input type="search" id="results-search" placeholder="Search research papers" aria-label="Search research papers" maxlength="200">
+      <select id="results-origin" aria-label="Case provenance">
+        <option value="">All provenance</option>
+        <option value="published_report">Reconstructed published reports</option>
+        <option value="surveillance_summary">Surveillance vignettes</option>
+        <option value="synthetic">Synthetic experiments</option>
+      </select>
+    </div>
+    <div id="results-list"></div>
+    <button class="results-more" id="results-more" hidden>Load more papers</button>
+  </section>
+  <section class="page" id="page-result" hidden>
+    <div id="research-paper"></div>
+  </section>
+  <section class="page" id="page-error" hidden><div class="empty" id="page-error-message"></div></section>
+</main>
+
+<footer>
+  <img class="footer-logo" src="/static/plagueshield-logo-transparent.png" width="24" height="24" alt="">
+  PlagueShield is an experimental agentic research system. It does not prescribe, withhold, or modify
+  treatment. Outputs require qualified specialist review. Token fees are used to
+  pay compute costs for this research.
+</footer>
+
+<script src="/static/vendor/motion-14.0.0.js"></script>
+<script src="/static/vendor/marked-18.1.0.js"></script>
+<script src="/static/vendor/dompurify-3.4.16.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+app = "plagueshield"
+primary_region = "ewr"
+kill_signal = "SIGTERM"
+kill_timeout = "240s"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PLAGUESHIELD_DATA_DIR = "/data"
+  PLAGUESHIELD_PUBLIC_READ_ONLY = "true"
+  PLAGUESHIELD_PUBLIC_URL = "https://plagueshield.com"
+  PLAGUESHIELD_LLM_MODEL = "gpt-5.5"
+  PLAGUESHIELD_WORKER_ENABLED = "true"
+  PLAGUESHIELD_RUN_INTERVAL_SECONDS = "120"
+  PLAGUESHIELD_LIVE_EVIDENCE = "true"
+  PLAGUESHIELD_X_ACCOUNT = "plagueshieldX"
+  PLAGUESHIELD_X_ENABLED = "false"
+  PLAGUESHIELD_X_DRY_RUN = "true"
+  PLAGUESHIELD_X_INTERVAL_SECONDS = "300"
+
+[[mounts]]
+  source = "plagueshield_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 100
+    hard_limit = 200
+
+  [[http_service.checks]]
+    grace_period = "30s"
+    interval = "30s"
+    timeout = "5s"
+    method = "GET"
+    path = "/healthz"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory = "1gb"

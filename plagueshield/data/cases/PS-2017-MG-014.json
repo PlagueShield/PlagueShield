@@ -1,0 +1,102 @@
+{
+  "case_id": "PS-2017-MG-014",
+  "label": "Urban pneumonic plague, Madagascar outbreak",
+  "provenance": {
+    "origin": "published_report",
+    "description": "Vignette reconstructed from WHO reporting of the 2017 Madagascar urban pneumonic plague outbreak. Reflects the documented pattern of early empiric treatment and consequent low culture recovery.",
+    "citation": {
+      "source": "WHO",
+      "title": "Plague outbreak Madagascar \u2014 External Situation Reports",
+      "identifier": null,
+      "url": "https://www.who.int/emergencies/disease-outbreak-news",
+      "year": 2017,
+      "retrieved_at": null,
+      "note": null
+    },
+    "deidentified": true,
+    "notes": null
+  },
+  "reported_date": "2017-10-12",
+  "country": "Madagascar",
+  "admin1": "Analamanga",
+  "age_band": "20-29",
+  "sex": "unknown",
+  "exposure": {
+    "plague_endemic_area": true,
+    "region_note": "Urban outbreak setting with documented person-to-person transmission",
+    "rodent_or_flea_contact": null,
+    "contact_with_confirmed_case": true,
+    "contact_with_sick_animal": null,
+    "hunting_or_skinning": null,
+    "laboratory_exposure": null,
+    "days_since_exposure": 3,
+    "cluster_size": 6
+  },
+  "clinical": {
+    "onset_date": "2017-10-10",
+    "presentation_date": "2017-10-11",
+    "form": "pneumonic",
+    "fever_c": 39.0,
+    "symptoms": [
+      "fever",
+      "cough",
+      "chest pain",
+      "dyspnoea"
+    ],
+    "lymphadenopathy": null,
+    "bubo_present": null,
+    "cough": true,
+    "hemoptysis": true,
+    "dyspnea": true,
+    "chest_imaging": "Rapidly progressive bilateral infiltrates",
+    "septic_shock": null,
+    "rapid_deterioration": true,
+    "days_symptomatic_at_presentation": 1
+  },
+  "diagnostics": [
+    {
+      "assay": "f1_rdt",
+      "result": "positive",
+      "specimen": "sputum",
+      "collected_at": "2017-10-11T08:00:00Z",
+      "reported_at": "2017-10-11T09:00:00Z",
+      "lab_tier": "field",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "pcr_pla",
+      "result": "positive",
+      "specimen": "sputum",
+      "collected_at": "2017-10-11T08:00:00Z",
+      "reported_at": "2017-10-12T14:00:00Z",
+      "lab_tier": "reference",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "culture",
+      "result": "negative",
+      "specimen": "sputum",
+      "collected_at": "2017-10-12T08:00:00Z",
+      "reported_at": "2017-10-15T09:00:00Z",
+      "lab_tier": "reference",
+      "lab_name": null,
+      "detail": "Collected after empiric therapy commenced",
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    }
+  ],
+  "genomic": null,
+  "susceptibility": [],
+  "prior_antibiotics": [],
+  "treatment_started": true,
+  "notes": "Empiric therapy started at presentation per outbreak protocol."
+}

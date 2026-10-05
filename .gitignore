@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+server/assessments.ndjson
+.pytest_cache/
+*.egg-info/
+.env
+.env.*
+!.env.example
+server/runtime.log
+server/*.sqlite3*
+.deployment-seed/
+.DS_Store
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "PS-2019-MN-001",
+    "label": "Marmot-exposure bubonic\u2192pneumonic, Mongolia/Russia border",
+    "origin": "published_report",
+    "country": "Mongolia",
+    "file": "PS-2019-MN-001.json"
+  },
+  {
+    "case_id": "PS-2017-MG-014",
+    "label": "Urban pneumonic plague, Madagascar outbreak",
+    "origin": "published_report",
+    "country": "Madagascar",
+    "file": "PS-2017-MG-014.json"
+  },
+  {
+    "case_id": "PS-2021-US-003",
+    "label": "Bubonic plague, US southwestern focus",
+    "origin": "surveillance_summary",
+    "country": "United States",
+    "file": "PS-2021-US-003.json"
+  },
+  {
+    "case_id": "PS-2020-CD-021",
+    "label": "Suspected pneumonic plague, remote health post (sparse data)",
+    "origin": "surveillance_summary",
+    "country": "Democratic Republic of the Congo",
+    "file": "PS-2020-CD-021.json"
+  },
+  {
+    "case_id": "PS-SYN-DISC-01",
+    "label": "SYNTHETIC \u2014 genomic screen clean, phenotype non-susceptible",
+    "origin": "synthetic",
+    "country": "(synthetic)",
+    "file": "PS-SYN-DISC-01.json"
+  },
+  {
+    "case_id": "PS-SYN-OOD-01",
+    "label": "SYNTHETIC \u2014 non-endemic, minimal evidence",
+    "origin": "synthetic",
+    "country": "(synthetic)",
+    "file": "PS-SYN-OOD-01.json"
+  },
+  {
+    "case_id": "PS-SYN-SPEC-01",
+    "label": "SYNTHETIC \u2014 sequencing contradicts plague-targeted assays",
+    "origin": "synthetic",
+    "country": "(synthetic)",
+    "file": "PS-SYN-SPEC-01.json"
+  },
+  {
+    "case_id": "PS-2022-US-009",
+    "label": "Septicemic plague, peridomestic animal exposure",
+    "origin": "surveillance_summary",
+    "country": "United States",
+    "file": "PS-2022-US-009.json"
+  }
+]

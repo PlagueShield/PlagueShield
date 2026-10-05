@@ -1,0 +1,214 @@
+{
+  "case_id": "PS-2021-US-003",
+  "label": "Bubonic plague, US southwestern focus",
+  "provenance": {
+    "origin": "surveillance_summary",
+    "description": "Representative case constructed from CDC's published characteristics of US human plague cases (peridomestic flea exposure, bubonic presentation, full reference-laboratory workup). Represents a pattern, not an individual.",
+    "citation": {
+      "source": "CDC",
+      "title": "Plague Surveillance and Maps \u2014 United States",
+      "identifier": null,
+      "url": "https://www.cdc.gov/plague/php/surveillance/",
+      "year": null,
+      "retrieved_at": null,
+      "note": null
+    },
+    "deidentified": true,
+    "notes": null
+  },
+  "reported_date": "2021-07-18",
+  "country": "United States",
+  "admin1": "New Mexico",
+  "age_band": "50-59",
+  "sex": "unknown",
+  "exposure": {
+    "plague_endemic_area": true,
+    "region_note": "Southwestern US enzootic focus",
+    "rodent_or_flea_contact": true,
+    "contact_with_confirmed_case": null,
+    "contact_with_sick_animal": true,
+    "hunting_or_skinning": null,
+    "laboratory_exposure": null,
+    "days_since_exposure": 5,
+    "cluster_size": null
+  },
+  "clinical": {
+    "onset_date": "2021-07-14",
+    "presentation_date": "2021-07-16",
+    "form": "bubonic",
+    "fever_c": 38.9,
+    "symptoms": [
+      "fever",
+      "headache",
+      "tender axillary swelling"
+    ],
+    "lymphadenopathy": true,
+    "bubo_present": true,
+    "cough": null,
+    "hemoptysis": null,
+    "dyspnea": null,
+    "chest_imaging": null,
+    "septic_shock": null,
+    "rapid_deterioration": null,
+    "days_symptomatic_at_presentation": 2
+  },
+  "diagnostics": [
+    {
+      "assay": "culture",
+      "result": "positive",
+      "specimen": "bubo_aspirate",
+      "collected_at": "2021-07-16T11:00:00Z",
+      "reported_at": "2021-07-18T16:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": "State public health laboratory (LRN reference)",
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "pcr_multiplex",
+      "result": "positive",
+      "specimen": "bubo_aspirate",
+      "collected_at": "2021-07-16T11:00:00Z",
+      "reported_at": "2021-07-17T09:00:00Z",
+      "lab_tier": "reference",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "phage_lysis",
+      "result": "positive",
+      "specimen": "bubo_aspirate",
+      "collected_at": "2021-07-18T16:00:00Z",
+      "reported_at": "2021-07-19T16:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "culture",
+      "result": "positive",
+      "specimen": "blood",
+      "collected_at": "2021-07-16T11:00:00Z",
+      "reported_at": "2021-07-19T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    }
+  ],
+  "genomic": {
+    "platform": "Illumina NextSeq",
+    "read_depth_x": 92.0,
+    "assembly_n50": null,
+    "completeness_pct": 99.1,
+    "contamination_pct": 0.2,
+    "species_call": "Yersinia pestis",
+    "ani_identity_pct": 99.6,
+    "mlst_or_lineage": "Branch 1.ORI",
+    "plasmid_markers_detected": [
+      "pCD1",
+      "pMT1",
+      "pPCP1"
+    ],
+    "amr_determinants": [
+      {
+        "gene_symbol": "blaA",
+        "drug_class": "beta_lactam",
+        "tool": "AMRFinderPlus 3.12.8",
+        "identity_pct": 99.8,
+        "coverage_pct": 100.0,
+        "contig": null,
+        "element_type": "AMR (species-intrinsic)"
+      }
+    ],
+    "amr_tool_run": "AMRFinderPlus 3.12.8 / 2024-07-22.1",
+    "amr_screen_performed": true,
+    "sequenced_at": "2021-07-22T09:00:00Z",
+    "accession": "(see NCBI Pathogen Detection for real accessions)"
+  },
+  "susceptibility": [
+    {
+      "antimicrobial": "gentamicin",
+      "drug_class": "aminoglycoside",
+      "mic_mg_l": 0.25,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2021-07-20T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    },
+    {
+      "antimicrobial": "streptomycin",
+      "drug_class": "aminoglycoside",
+      "mic_mg_l": 1.0,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2021-07-20T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    },
+    {
+      "antimicrobial": "ciprofloxacin",
+      "drug_class": "fluoroquinolone",
+      "mic_mg_l": 0.015,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2021-07-20T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    },
+    {
+      "antimicrobial": "doxycycline",
+      "drug_class": "tetracycline",
+      "mic_mg_l": 0.5,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2021-07-20T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    },
+    {
+      "antimicrobial": "trimethoprim-sulfamethoxazole",
+      "drug_class": "sulfonamide",
+      "mic_mg_l": 0.5,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2021-07-20T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    }
+  ],
+  "prior_antibiotics": [],
+  "treatment_started": true,
+  "notes": null
+}

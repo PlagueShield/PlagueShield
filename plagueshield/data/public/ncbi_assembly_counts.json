@@ -1,0 +1,13 @@
+{
+  "source": "NCBI Assembly (Yersinia pestis)",
+  "ok": true,
+  "fetched_at": "2026-10-05T17:03:27.716451+00:00",
+  "count": 1,
+  "records": [
+    {
+      "public_assembly_count": 3670
+    }
+  ],
+  "note": "3670 public Y. pestis assemblies \u2014 compare against CHARACTERISED_ISOLATES in fewshot/prior.py",
+  "url": "https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=632"
+}

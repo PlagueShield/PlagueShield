@@ -1,0 +1,131 @@
+{
+  "case_id": "PS-2022-US-009",
+  "label": "Septicemic plague, peridomestic animal exposure",
+  "provenance": {
+    "origin": "surveillance_summary",
+    "description": "Representative septicaemic presentation built from CDC surveillance characteristics, where primary septicaemic plague presents without a localising bubo and is frequently diagnosed late.",
+    "citation": {
+      "source": "CDC",
+      "title": "Plague Surveillance and Maps \u2014 United States",
+      "identifier": null,
+      "url": "https://www.cdc.gov/plague/php/surveillance/",
+      "year": null,
+      "retrieved_at": null,
+      "note": null
+    },
+    "deidentified": true,
+    "notes": null
+  },
+  "reported_date": "2022-06-24",
+  "country": "United States",
+  "admin1": "Colorado",
+  "age_band": "60-69",
+  "sex": "unknown",
+  "exposure": {
+    "plague_endemic_area": true,
+    "region_note": "Prairie-dog colony die-off reported nearby",
+    "rodent_or_flea_contact": true,
+    "contact_with_confirmed_case": null,
+    "contact_with_sick_animal": true,
+    "hunting_or_skinning": null,
+    "laboratory_exposure": null,
+    "days_since_exposure": 6,
+    "cluster_size": null
+  },
+  "clinical": {
+    "onset_date": "2022-06-20",
+    "presentation_date": "2022-06-23",
+    "form": "septicemic",
+    "fever_c": 39.8,
+    "symptoms": [
+      "fever",
+      "hypotension",
+      "confusion",
+      "abdominal pain"
+    ],
+    "lymphadenopathy": false,
+    "bubo_present": false,
+    "cough": null,
+    "hemoptysis": null,
+    "dyspnea": null,
+    "chest_imaging": null,
+    "septic_shock": true,
+    "rapid_deterioration": true,
+    "days_symptomatic_at_presentation": 3
+  },
+  "diagnostics": [
+    {
+      "assay": "culture",
+      "result": "positive",
+      "specimen": "blood",
+      "collected_at": "2022-06-23T14:00:00Z",
+      "reported_at": "2022-06-25T20:00:00Z",
+      "lab_tier": "reference",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "maldi_tof",
+      "result": "indeterminate",
+      "specimen": "blood",
+      "collected_at": "2022-06-25T20:00:00Z",
+      "reported_at": "2022-06-25T22:00:00Z",
+      "lab_tier": "hospital",
+      "lab_name": null,
+      "detail": "No confident identification \u2014 organism not in the clinical library",
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    },
+    {
+      "assay": "pcr_multiplex",
+      "result": "pending",
+      "specimen": "blood",
+      "collected_at": "2022-06-25T20:00:00Z",
+      "reported_at": null,
+      "lab_tier": "reference",
+      "lab_name": null,
+      "detail": null,
+      "ct_value": null,
+      "titer": null,
+      "fold_rise": null
+    }
+  ],
+  "genomic": null,
+  "susceptibility": [
+    {
+      "antimicrobial": "gentamicin",
+      "drug_class": "aminoglycoside",
+      "mic_mg_l": 0.5,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2022-06-27T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    },
+    {
+      "antimicrobial": "ciprofloxacin",
+      "drug_class": "fluoroquinolone",
+      "mic_mg_l": 0.03,
+      "mic_operator": "<=",
+      "interpretation": "S",
+      "method": "broth_microdilution",
+      "breakpoint_source": "CLSI M45 4th ed.",
+      "tested_at": "2022-06-27T09:00:00Z",
+      "lab_tier": "bsl3_reference",
+      "lab_name": null,
+      "confirmed_by_repeat": false,
+      "note": null
+    }
+  ],
+  "prior_antibiotics": [],
+  "treatment_started": true,
+  "notes": "Doxycycline not included in the local panel."
+}

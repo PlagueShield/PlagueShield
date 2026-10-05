@@ -1,0 +1,170 @@
+{
+  "source": "WHO Disease Outbreak News",
+  "ok": true,
+  "fetched_at": "2026-10-05T17:03:27.927871+00:00",
+  "count": 20,
+  "records": [
+    {
+      "title": "Plague - Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/plague---madagascar",
+      "published": "2021-10-01T07:54:00Z",
+      "summary": null,
+      "don_id": "2021-DON338",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/plague-democratic-republic-of-the-congo",
+      "published": "2020-07-23T18:00:00Z",
+      "summary": null,
+      "don_id": "2020-DON287",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/27-november-2017-plague-madagascar-en",
+      "published": "2017-11-27T00:00:00Z",
+      "summary": null,
+      "don_id": "2017-DON1",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/15-november-2017-plague-madagascar-en",
+      "published": "2017-11-15T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON104",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/02-november-2017-plague-madagascar-en",
+      "published": "2017-11-02T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON110",
+      "plague_related": true
+    },
+    {
+      "title": "Seychelles \u2013 Suspected Plague (Ex- Madagascar)",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/26-october-2017-plague-seychelles-en",
+      "published": "2017-10-26T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON111",
+      "plague_related": true
+    },
+    {
+      "title": "Seychelles \u2013 Suspected Plague (Ex- Madagascar)",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/15-october-2017-plague-seychelles-en",
+      "published": "2017-10-15T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON113",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/02-october-2017-plague-madagascar-en",
+      "published": "2017-10-02T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON116",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/29-september-2017-plague-madagascar-en",
+      "published": "2017-09-29T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON117",
+      "plague_related": true
+    },
+    {
+      "title": "Plague \u2013 Madagascar",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/09-january-2017-plague-mdg-en",
+      "published": "2017-01-09T00:00:00Z",
+      "summary": null,
+      "don_id": "2017DON189",
+      "plague_related": true
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON618",
+      "published": "2026-09-25T15:16:26Z",
+      "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-U\u00e9l\u00e9 province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the country: Bas-U\u00e9l\u00e9, Haut-U\u00e9l\u00e9, Ituri, North Kivu, South Kivu, Sud Ubangi and Tshopo. This latest geographic",
+      "don_id": "2026-DON618",
+      "plague_related": false
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON617",
+      "published": "2026-09-10T08:16:08Z",
+      "summary": "Since the last Disease Outbreak News was published on 28 August 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Kayna, in North Kivu. This increase brings the total number of affected health zones to 61 across six out of 26 provinces of the country: Bas-U\u00e9l\u00e9, Haut-U\u00e9l\u00e9, Ituri, North Kivu, South Kivu, and Tshopo.\r\nAs of 7 September 2026, the Democratic Republic of the Congo has reported 6757 confirmed cases, including 3267 deaths, resulting in a crude case fatality ratio (CFR) of 48.3%. The transmission dynamics remain vari",
+      "don_id": "2026-DON617",
+      "plague_related": false
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON616",
+      "published": "2026-08-28T15:28:00Z",
+      "summary": "Since the last Disease Outbreak News was published on 14 August 2026, the outbreak has spread from 54 to 60 health zones. The number of affected provinces stands at six out of 26 provinces of the country: Bas-U\u00e9l\u00e9, Haut-U\u00e9l\u00e9, Ituri, North Kivu, South Kivu, and Tshopo. Six additional health zones reported cases since the last update - Ganga and Viadana health zones in Bas-U\u00e9l\u00e9 province, Biena, Manguredjipa, and Mutwanga in North Kivu, and Tshopo health zone in Tshopo province.  \r\n\r\nAs of 26 August 2026, a total of 5794 confirmed cases, including 2786 deaths, have been reported, corresponding to",
+      "don_id": "2026-DON616",
+      "plague_related": false
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON615",
+      "published": "2026-08-14T15:38:29Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is in a phase of intense transmission. It is the largest Ebola outbreak ever reported in the country and expanding faster than any previous Ebola outbreak. The epidemic is increasingly characterized by sustained transmission within interconnected geographic clusters. Initially confined to the Mongbwalu health zone in Ituri Province, the outbreak has now expanded to 54 health zones across six provinces (Ituri, North Kivu, South Kivu, Haut-U\u00e9l\u00e9, Tshopo, and Bas-U\u00e9l\u00e9). The most recently affected Bas-U\u00e9l\u00e9 province ",
+      "don_id": "2026-DON615",
+      "plague_related": false
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON614",
+      "published": "2026-08-01T10:13:28Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is intensifying, with sustained transmission and continued increases in reported cases and deaths. Initially confined to the Mongbwalu health zone in Ituri Province, over the last two months, the outbreak has expanded to five provinces (Ituri, North Kivu, South Kivu, Haut-U\u00e9l\u00e9 and Tshopo), now affecting 49 health zones. \r\nThe outbreak is now the largest Ebola outbreak ever reported in the Democratic Republic of the Congo. As of 30 July 2026, a total of 3605 confirmed cases, including 1587 deaths, have been repo",
+      "don_id": "2026-DON614",
+      "plague_related": false
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON613",
+      "published": "2026-07-17T16:13:00Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of America who was medically evacuated from the Democratic Republic of the Congo. This is the second Uni",
+      "don_id": "2026-DON613",
+      "plague_related": false
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON612",
+      "published": "2026-07-03T15:13:57Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a medical doctor return",
+      "don_id": "2026-DON612",
+      "plague_related": false
+    },
+    {
+      "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON611",
+      "published": "2026-07-02T18:00:00Z",
+      "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter referred to as the United Kingdom), was laboratory confirmed. \r\n\r\nAs of 2 July, a total of 13 cases, i",
+      "don_id": "2026-DON611",
+      "plague_related": false
+    },
+    {
+      "title": "Nipah virus disease - India",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON609",
+      "published": "2026-06-25T18:00:00Z",
+      "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. \r\nThe case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU).\r\nAs of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, including health and care workers, with no reported secondary cases to date.\r\nNiV is a zoonotic disease",
+      "don_id": "2026-DON609",
+      "plague_related": false
+    },
+    {
+      "title": "Yellow fever - Global",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON610",
+      "published": "2026-06-24T18:00:00Z",
+      "summary": "Yellow fever is a viral disease found in areas of Africa and the Americas, spread by infected mosquitoes. Following an increase of cases in the Americas in 2025, transmission activity remained into 2026. From 1 January to 26 May 2026, six countries reported a total of 79 human infections along with multiple epizootics, indicating active sylvatic circulation. In Africa, sustained activity continued across parts of the region, affecting 13 high-risk countries (as per classification in the Eliminate Yellow fever Epidemics (EYE) Strategy). From January to May 2026, three countries in Africa report",
+      "don_id": "2026-DON610",
+      "plague_related": false
+    }
+  ],
+  "note": "800 DON items scanned across 8 pages; 10 plague-related found",
+  "url": "https://www.who.int/emergencies/disease-outbreak-news"
+}

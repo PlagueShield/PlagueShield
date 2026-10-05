@@ -1,0 +1,490 @@
+{
+  "source": "NCBI BioSample (Yersinia pestis)",
+  "ok": true,
+  "fetched_at": "2026-10-05T17:03:27.277463+00:00",
+  "count": 60,
+  "records": [
+    {
+      "uid": "63874347",
+      "accession": "SAMEA121228121",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721299",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/10/01",
+      "sourcesample": "BioSample:SAMEA121228121"
+    },
+    {
+      "uid": "62375586",
+      "accession": "SAMN62375586",
+      "title": "Pathogen: clinical or host-associated sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/23",
+      "sourcesample": "BioSample:SAMN62375586"
+    },
+    {
+      "uid": "62671784",
+      "accession": "SAMN62671784",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671784"
+    },
+    {
+      "uid": "62671783",
+      "accession": "SAMN62671783",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671783"
+    },
+    {
+      "uid": "62671782",
+      "accession": "SAMN62671782",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671782"
+    },
+    {
+      "uid": "62671781",
+      "accession": "SAMN62671781",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671781"
+    },
+    {
+      "uid": "62671780",
+      "accession": "SAMN62671780",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671780"
+    },
+    {
+      "uid": "62671779",
+      "accession": "SAMN62671779",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671779"
+    },
+    {
+      "uid": "62671778",
+      "accession": "SAMN62671778",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671778"
+    },
+    {
+      "uid": "62671777",
+      "accession": "SAMN62671777",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671777"
+    },
+    {
+      "uid": "62671776",
+      "accession": "SAMN62671776",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/22",
+      "sourcesample": "BioSample:SAMN62671776"
+    },
+    {
+      "uid": "63359772",
+      "accession": "SAMEA121227362",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721281",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121227362"
+    },
+    {
+      "uid": "63359308",
+      "accession": "SAMEA121227956",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721296",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121227956"
+    },
+    {
+      "uid": "63350423",
+      "accession": "SAMEA121227747",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721289",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121227747"
+    },
+    {
+      "uid": "63349018",
+      "accession": "SAMEA121227795",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721292",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121227795"
+    },
+    {
+      "uid": "63347130",
+      "accession": "SAMEA121228105",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721298",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121228105"
+    },
+    {
+      "uid": "63344523",
+      "accession": "SAMEA121228048",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721297",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121228048"
+    },
+    {
+      "uid": "63339557",
+      "accession": "SAMEA121227836",
+      "title": "This sample represents a MAG derived from the metagenomic sample ERS1721293",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/09/21",
+      "sourcesample": "BioSample:SAMEA121227836"
+    },
+    {
+      "uid": "54411907",
+      "accession": "SAMN54411907",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/07/09",
+      "sourcesample": "BioSample:SAMN54411907"
+    },
+    {
+      "uid": "54411906",
+      "accession": "SAMN54411906",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2026/07/09",
+      "sourcesample": "BioSample:SAMN54411906"
+    },
+    {
+      "uid": "47876479",
+      "accession": "SAMN47876479",
+      "title": "MIGS Cultured Bacterial/Archaeal sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2025/04/10",
+      "sourcesample": "BioSample:SAMN47876479"
+    },
+    {
+      "uid": "47876477",
+      "accession": "SAMN47876477",
+      "title": "MIGS Cultured Bacterial/Archaeal sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2025/04/10",
+      "sourcesample": "BioSample:SAMN47876477"
+    },
+    {
+      "uid": "47876472",
+      "accession": "SAMN47876472",
+      "title": "MIGS Cultured Bacterial/Archaeal sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2025/04/10",
+      "sourcesample": "BioSample:SAMN47876472"
+    },
+    {
+      "uid": "44446536",
+      "accession": "SAMN44446536",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446536"
+    },
+    {
+      "uid": "44446500",
+      "accession": "SAMN44446500",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446500"
+    },
+    {
+      "uid": "44446499",
+      "accession": "SAMN44446499",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446499"
+    },
+    {
+      "uid": "44446498",
+      "accession": "SAMN44446498",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446498"
+    },
+    {
+      "uid": "44446497",
+      "accession": "SAMN44446497",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446497"
+    },
+    {
+      "uid": "44446496",
+      "accession": "SAMN44446496",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446496"
+    },
+    {
+      "uid": "44446495",
+      "accession": "SAMN44446495",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446495"
+    },
+    {
+      "uid": "44446494",
+      "accession": "SAMN44446494",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446494"
+    },
+    {
+      "uid": "44446493",
+      "accession": "SAMN44446493",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446493"
+    },
+    {
+      "uid": "44446490",
+      "accession": "SAMN44446490",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446490"
+    },
+    {
+      "uid": "44446489",
+      "accession": "SAMN44446489",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446489"
+    },
+    {
+      "uid": "44446488",
+      "accession": "SAMN44446488",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446488"
+    },
+    {
+      "uid": "44446487",
+      "accession": "SAMN44446487",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446487"
+    },
+    {
+      "uid": "44446486",
+      "accession": "SAMN44446486",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446486"
+    },
+    {
+      "uid": "44446485",
+      "accession": "SAMN44446485",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446485"
+    },
+    {
+      "uid": "44446484",
+      "accession": "SAMN44446484",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446484"
+    },
+    {
+      "uid": "44446483",
+      "accession": "SAMN44446483",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446483"
+    },
+    {
+      "uid": "44446482",
+      "accession": "SAMN44446482",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446482"
+    },
+    {
+      "uid": "44446481",
+      "accession": "SAMN44446481",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446481"
+    },
+    {
+      "uid": "44446480",
+      "accession": "SAMN44446480",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446480"
+    },
+    {
+      "uid": "44446479",
+      "accession": "SAMN44446479",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446479"
+    },
+    {
+      "uid": "44446478",
+      "accession": "SAMN44446478",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446478"
+    },
+    {
+      "uid": "44446477",
+      "accession": "SAMN44446477",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446477"
+    },
+    {
+      "uid": "44446476",
+      "accession": "SAMN44446476",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446476"
+    },
+    {
+      "uid": "44446475",
+      "accession": "SAMN44446475",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446475"
+    },
+    {
+      "uid": "44446474",
+      "accession": "SAMN44446474",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446474"
+    },
+    {
+      "uid": "44446473",
+      "accession": "SAMN44446473",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446473"
+    },
+    {
+      "uid": "44446472",
+      "accession": "SAMN44446472",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446472"
+    },
+    {
+      "uid": "44446471",
+      "accession": "SAMN44446471",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446471"
+    },
+    {
+      "uid": "44446470",
+      "accession": "SAMN44446470",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446470"
+    },
+    {
+      "uid": "44446469",
+      "accession": "SAMN44446469",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446469"
+    },
+    {
+      "uid": "44446468",
+      "accession": "SAMN44446468",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446468"
+    },
+    {
+      "uid": "44446467",
+      "accession": "SAMN44446467",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446467"
+    },
+    {
+      "uid": "44446466",
+      "accession": "SAMN44446466",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446466"
+    },
+    {
+      "uid": "44446465",
+      "accession": "SAMN44446465",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44446465"
+    },
+    {
+      "uid": "44445148",
+      "accession": "SAMN44445148",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/25",
+      "sourcesample": "BioSample:SAMN44445148"
+    },
+    {
+      "uid": "44423843",
+      "accession": "SAMN44423843",
+      "title": "Microbe sample from Yersinia pestis",
+      "organism": "Yersinia pestis",
+      "publication_date": "2024/10/24",
+      "sourcesample": "BioSample:SAMN44423843"
+    }
+  ],
+  "note": "Retrieved 60 public BioSample records",
+  "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=Yersinia+pestis"
+}
